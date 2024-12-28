@@ -1,0 +1,28 @@
+{
+  "name": "@tinyat/jwt",
+  "description": "ATProto-specific JWT utility package.",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "rm -rf dist; bun run build"
+  },
+  "files": [
+    "dist/",
+    "lib/",
+    "!lib/**/*.test.ts"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
