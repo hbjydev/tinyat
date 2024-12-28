@@ -6,7 +6,7 @@ designed to support & complement packages in [atcute](https://github.com/mary-ex
 ---
 
 | Packages |
-|==========|
+| -------- |
 | **Services** |
 | [`xrpc-server`](./packages/xrpc-server): Fetch-compliant XRPC server constructs. |
 | **Utilities** |
