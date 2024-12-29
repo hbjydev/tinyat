@@ -1,8 +1,7 @@
 # `@tinyat/xrpc-server`
 
-A Web Standards-driven XRPC server implementation that provides a routing and
-validation (in and out) system powered by Zod, without caring about how you
-serve the API.
+A Web Standards-driven XRPC server implementation that provides a routing and validation (in and
+out) system powered by Zod, without caring about how you serve the API.
 
 ## Usage
 
@@ -14,18 +13,18 @@ import { z } from 'npm:zod';
 import { defineHandler, handle } from 'npm:@tinyat/xrpc-server';
 
 defineHandler(
-  "com.atproto.identity.resolveHandle",
-  {
-    input: z.object({
-      handle: z.string(),
-    }),
-    output: z.object({
-      did: z.string(),
-    }),
-  },
-  ({ input: { handle } }) => ({
-    did: handle,
-  }),
+	'com.atproto.identity.resolveHandle',
+	{
+		input: z.object({
+			handle: z.string(),
+		}),
+		output: z.object({
+			did: z.string(),
+		}),
+	},
+	({ input: { handle } }) => ({
+		did: handle,
+	}),
 );
 
 export default { fetch: handle };

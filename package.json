@@ -1,17 +1,17 @@
 {
-  "name": "tinyat",
-  "packageManager": "bun@1.1.42",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "turbo run build"
-  },
-  "dependencies": {
-    "turbo": "^2.3.3"
-  },
-  "devDependencies": {
-    "prettier": "^3.4.2"
-  }
+	"name": "tinyat",
+	"packageManager": "bun@1.1.42",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"build": "turbo run build"
+	},
+	"dependencies": {
+		"turbo": "^2.3.3"
+	},
+	"devDependencies": {
+		"prettier": "^3.4.2"
+	}
 }
