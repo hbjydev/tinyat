@@ -44,10 +44,16 @@ const resolveHttp = async (handle: string) => {
   }
 };
 
+/**
+ * Resolves a DID from a handle using either DNS or HTTP, or null if no DID
+ * was found for the provided handle.
+ *
+ * Cloudflare DNS over HTTP (DoH) is used to perform the DNS lookup.
+ */
 export const resolveHandle = async (handle: string) => {
   const [dnsDid, httpDid] = await Promise.all([
-    resolveDns(handle),
-    resolveHttp(handle),
+    resolveDns(handle).catch(() => {}),
+    resolveHttp(handle).catch(() => {}),
   ]);
 
   if (dnsDid && httpDid && dnsDid !== httpDid) return null;
