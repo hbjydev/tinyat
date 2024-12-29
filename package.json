@@ -6,7 +6,9 @@
 		"packages/*"
 	],
 	"scripts": {
-		"build": "turbo run build"
+		"build": "turbo run build",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
 	},
 	"dependencies": {
 		"turbo": "^2.3.3"
