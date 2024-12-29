@@ -10,6 +10,7 @@ designed to support & complement packages in [atcute](https://github.com/mary-ex
 | **Services** |
 | [`xrpc-server`](./packages/xrpc-server): Fetch-compliant XRPC server constructs. |
 | **Utilities** |
+| [`identity`](./packages/identity): Small utilities for working with atproto DIDs, including handle resolution for `did:plc` and `did:web` accounts. |
 | [`jwt`](./packages/jwt): JWT utilities at a higher level than atcute provides (working with proxied service tokens, etc) |
 
 ## Contributing
